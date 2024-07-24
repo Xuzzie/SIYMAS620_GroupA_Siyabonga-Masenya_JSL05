@@ -30,7 +30,7 @@ const songs = [
 const guardians = {
   "Star-Lord": "Rock",
   Gamora: "Hip Hop",
-  Drax: "Electronic",
+  Drax: "Electronic", // now remember The name e.g. "Drax"  will be the key  whilst "electronic" will be the value , This is importaant in the object.key method we will use
   Rocket: "Pop",
   Groot: "Electronic",
   // Add preferences for Drax, Rocket, and Groot
@@ -38,6 +38,14 @@ const guardians = {
 
 // Function to generate playlist based on preferred genre
 function generatePlaylist(guardians, songs) {
+  const playlists = {}; //Im learning that we  first need to create an empty object in which we will push each team members favorite songs ,Still a bit confused by the logic of this
+  Object.keys(guardians).map((guardianMember) => {
+    const favGenre = guardians[guardianMember];
+    playlists[guardianMember] = songs.filter((song) => song.genre === favGenre); ///For transparency i worked through this function myself but eventually needed the aid of chatgpt to help me complete it since i found it very difficult ,I will ask for help in a private coaching session on this
+
+    return playlists;
+  });
+
   // Use the map() function to create playlists for each Guardian
   // Your code here
 }
