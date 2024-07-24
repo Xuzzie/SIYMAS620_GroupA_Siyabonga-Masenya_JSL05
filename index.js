@@ -29,7 +29,10 @@ const songs = [
 // Object containing each Guardian's preferred genre
 const guardians = {
   "Star-Lord": "Rock",
-  Gamora: "Pop",
+  Gamora: "Hip Hop",
+  Drax: "Electronic",
+  Rocket: "Pop",
+  Groot: "Electronic",
   // Add preferences for Drax, Rocket, and Groot
 };
 
